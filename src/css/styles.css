@@ -1,0 +1,63 @@
+@import url(../css/normalize.css);
+@import url(../css/global.css);
+@import url(../css/variables.css);
+/*header*/
+.nav--header{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+/** cards **/
+
+.container--cards{
+    display: flex;
+    width: 90vw;
+    border: 1px solid red;
+}
+.cards{
+    background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 80vh;
+border-radius: 50px;
+color: #fff;
+cursor: pointer;
+flex: 0.1;
+margin: 10px;
+position: relative;
+transition: flex 0.7s ease-in;
+}
+/*** card-one ***/
+.card--one{
+    background-image: url(../img/aguazul.png);
+}
+.card--two{
+    background-image: url(../img/chucumaltik.png);
+}
+.card--three{
+    background-image: url(../img/palenque.png);
+}
+.card--four{
+    background-image: url(../img/tuxtla_gutierrez_velodenovia.webp);
+}
+.card--five{
+    background-image: url(../img/velodeangel.png);
+}
+.title{
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-size: 3rem;
+    position: relative;
+    text-align: left;
+    margin-left: 3rem;
+    bottom: -690px;
+    opacity: 0;
+}
+.cards.active{
+    flex: 5;
+}
+.cards.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    
+}

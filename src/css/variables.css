@@ -1,0 +1,17 @@
+:root{
+    --color-bg-Main:#ff0000;
+    --color-bg-btn:#ce3930;
+    --color-bg-second: #dc9a31;
+    --color-grey-1:#cccccc;
+    --color-grey-2:#f5f3f5;
+    --color-grey-3:#eeeeee;
+    --color-black:#212529;
+    --color-black2:#414141;
+    --color-blue:#006bb4;
+    --color-sale-primary:#ffd814;
+    --color-sale-secundary:#FCD200;
+    --principal-font:'Roboto', sans-serif;
+    --tablet:48rem;
+    --desktop:105rem;
+    --mobile:30rem;
+}
