@@ -1,0 +1,118 @@
+@keyframes rotate{
+    0%, 20%{
+        transform: translateY(0);
+    }
+    25%, 45%{
+        transform: translateY(-100%);
+    }
+
+	50%, 70% {
+		transform: translateY(-200%);
+	}
+	
+	75%, 95% {
+		transform: translateY(-300%);
+	}
+	
+	100% {
+		transform: translateY(-400%);
+	}
+}
+
+@keyframes bg {
+	0%, 20% {
+		background: $beaver;
+	}
+	
+	25%, 45% {
+		background: $otter;
+	}
+	
+	50%, 70% {
+		background: $muskrat;
+	}
+	
+	75%, 95% {
+		background: $gopher;
+	}
+	
+	100% {
+		background: $beaver;
+	}
+}
+
+@keyframes textShadow {
+	0%, 20% {
+		text-shadow: 2px 2px #614b23;
+	}
+	
+	25%, 45% {
+		text-shadow: 2px 2px #887045;
+	}
+	
+	50%, 70% {
+		text-shadow: 2px 2px #c37f00;
+	}
+	
+	75%, 95% {
+		text-shadow: 2px 2px #80796b;
+	}
+	
+	100% {
+		text-shadow: 2px 2px #614b23;
+	}
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+    background: $beaver;
+    color: white;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: bg 8s ease 0s infinite;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.textchange{
+    display: flex;
+    margin-top: 3rem;
+    padding-left: 10px;
+    height: 20vh;
+}
+
+.static {
+	font-weight: 400;
+}
+
+h1 {
+	text-shadow: 2px 2px #614b23;
+	margin: 0;
+	font-size: 30px;
+	animation: textShadow 8s ease 0s infinite;
+}
+
+.rotate {
+	margin-left: 10px;
+	height: 34px;
+    overflow: hidden;
+}
+.rotate li{
+    transform: translateY(0);
+	animation: rotate 8s ease 0s infinite;
+}

@@ -1,14 +1,51 @@
 @import url(../css/normalize.css);
 @import url(../css/global.css);
 @import url(../css/variables.css);
+@import url(../css/rotate.css);
+/* body */
+body{
+    background: linear-gradient(0deg, rgba(255,230,0,1) 0%, rgba(255,124,34,1) 100%);
+}
 /*header*/
 .nav--header{
     display: flex;
     justify-content: space-around;
     padding: 2rem;
 }
+.nav--links{
+    display: flex;
+    gap:3rem;
+    
+}
+.nav--links a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.nav--links a:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    color: blueviolet;
+}
+/* main */
+.main{
+    margin: 3rem;
+    overflow:hidden;
+    ;
+}
+.main:hover .main--image{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+}
+.main--image{
+    background-image: url(../img/velodeangel.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    transition: 0.7s ease-in;
+}
 /** cards **/
-
 .container--cards{
     display: flex;
     width: 90vw;
@@ -16,16 +53,16 @@
 }
 .cards{
     background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-height: 80vh;
-border-radius: 50px;
-color: #fff;
-cursor: pointer;
-flex: 0.1;
-margin: 10px;
-position: relative;
-transition: flex 0.7s ease-in;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.1;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
 }
 /*** card-one ***/
 .card--one{
