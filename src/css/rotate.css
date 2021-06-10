@@ -21,23 +21,23 @@
 
 @keyframes bg {
 	0%, 20% {
-		background: $beaver;
+		background: var(--Great);
 	}
 	
 	25%, 45% {
-		background: $otter;
+		background: var(--Polite);
 	}
 	
 	50%, 70% {
-		background: $muskrat;
+		background: var(--Enjoyable);
 	}
 	
 	75%, 95% {
-		background: $gopher;
+		background: var(--Persistent);
 	}
 	
 	100% {
-		background: $beaver;
+		background: var(--Great);
 	}
 }
 
@@ -74,7 +74,7 @@
     border-radius: 2px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
-    background: $beaver;
+    background: var(--Polite);
     color: white;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -82,7 +82,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	animation: bg 8s ease 0s infinite;
+	animation: 8s ease 0s infinite;
 }
 ul {
 	list-style: none;
@@ -90,10 +90,12 @@ ul {
 	padding: 0;
 }
 .textchange{
+	align-items: center;
     display: flex;
-    margin-top: 3rem;
+	margin: 3rem;
+	justify-content: center;
     padding-left: 10px;
-    height: 20vh;
+	height: 10vh;
 }
 
 .static {
@@ -104,15 +106,16 @@ h1 {
 	text-shadow: 2px 2px #614b23;
 	margin: 0;
 	font-size: 30px;
-	animation: textShadow 8s ease 0s infinite;
+	animation: 8s ease 0s infinite;
 }
 
 .rotate {
 	margin-left: 10px;
 	height: 34px;
-    overflow: hidden;
+	overflow: hidden;
+	
 }
 .rotate li{
     transform: translateY(0);
-	animation: rotate 8s ease 0s infinite;
+	animation: 8s ease 0s infinite;
 }

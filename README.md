@@ -4,13 +4,11 @@
 Practice implementing javascript on tourism website 
 
 
-##Html 
+##Technologies  
 
-Semantic html implementation 
+HTML Semantic implementation , CSS and Javascript
 =============
 
-Basic to advanced css styles 
--------------
 
 ###50 Projects 50 days
 Implement my first steps with javascript using projects from 50Projects50days 
